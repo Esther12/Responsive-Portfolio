@@ -20,40 +20,15 @@ header{
     background-color: #e9e9e9;
     border-bottom:#777777;
 }
-    nav{
-        list-style-type: none;
-        overflow: hidden;
-        width:900px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        /* padding-left:30px;
-        padding-right:30px;   */
-    }
-
-@media only screen and (max-width: 768px){
-    nav{
-        list-style-type: none;
-        width:750px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        /* padding-left:30px;
-        padding-right:30px;   */
-    }
-}
-@media only screen and (max-width: 640px){
-    nav{
-        list-style-type: none;
-        overflow: hidden;
-        width:625px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        height: 10%;
-        /* padding-left:30px;
-        padding-right:30px;   */
-    }
+nav{
+    list-style-type: none;
+    overflow: hidden;
+    width:900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* padding-left:30px;
+    padding-right:30px;   */
 }
 .head1{
     float: left; 
@@ -63,19 +38,8 @@ header{
     font-family: 'IM Fell Great Primer', serif;
 
 }
-@media only screen and (max-width:640px){
-    .head1{
-        float: left;
-        width:100%;
-        background-color:#4aaaa5; 
-        color:aliceblue;
-        padding: 20px;
-        font-family: 'IM Fell Great Primer', serif;
-    
-    }
-    .head1 h1{
-        width:100%;
-    }
+.head1:hover{
+    opacity: 1;
 }
 ul{
     list-style-type: none;
@@ -86,27 +50,15 @@ li {
     float: right;
     vertical-align: bottom;
   }
-@media only screen and (max-width:640px){
-    ul{
-        list-style-type: none;
-        overflow: hidden;
-        text-align: center;
-        margin-top:80px;
-        display: flex;
-        justify-content: center;
-    }
-    li {
-        display: inline-block;
-        vertical-align: bottom;
-      }
-}
 
-  
 li a {
     display: block;
     text-align: center;
     padding-left:20px; 
     text-decoration: none;
+}
+li a:hover{
+    font-size: 20px;
 }
 .section{
     position: absloute;
@@ -122,27 +74,6 @@ section{
     top:3%;
     overflow: hidden;
 }
-@media only screen and (max-width: 768px){
-    section{
-        width:600px;
-        margin: auto;
-        background-color: #fff;
-        padding: 30px;
-        border: #4aaaa5 1px solid;
-        top:3%;
-        overflow: hidden;
-    }
-}
-@media only screen and (max-width: 640px){
-    section{
-        width:480px;
-        margin: auto;
-        background-color: #fff;
-        border: #4aaaa5 1px solid;
-        top:3%;
-        overflow: hidden;
-    }
-}
 section h1{
     color:#4aaaa5; 
     font-family: 'Fredericka the Great', cursive;
@@ -153,18 +84,6 @@ section h1{
     padding-top:10px;
 }
 /* index.html */
-@media only screen and (min-width: 641px){
-    .id-img{
-        width:150px;
-        height:160px;
-        margin:10px;
-    }
-}
-@media only screen and (max-width: 640px){
-    .id-img{
-        width: 100%;
-    }
-}
 .text-section p{
     margin: 10px 5px 22px 5px;
     font-family: 'Poiret One', cursive;
@@ -189,19 +108,12 @@ section h1{
     float: left;
 }
 
-@media only screen and (max-width: 640px){
-    .t-img{
-        position: relative;
-        height:auto;
-        width: 100%;
-        padding: 30px;
-        text-align: center;
-        float: left;
-    }
-}
 .pic{
     height: 200px;
     width: 200px;
+}
+.pic:hover{
+    opacity: 0.8;
 }
 .t-img p{
     position: absolute;
@@ -261,4 +173,89 @@ footer{
     height:50px;
     color: #e9e9e9;
     font-size: 10px;
+}
+@media only screen and (max-width: 768px){
+    nav{
+        list-style-type: none;
+        width:750px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        /* padding-left:30px;
+        padding-right:30px;   */
+    }
+    section{
+        width:600px;
+        margin: auto;
+        background-color: #fff;
+        padding: 30px;
+        border: #4aaaa5 1px solid;
+        top:3%;
+        overflow: hidden;
+    }
+}
+@media only screen and (max-width: 640px){
+    nav{
+        list-style-type: none;
+        overflow: hidden;
+        width:625px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        height: 10%;
+        /* padding-left:30px;
+        padding-right:30px;   */
+    }
+    .head1{
+        float: left;
+        width:100%;
+        background-color:#4aaaa5; 
+        color:aliceblue;
+        padding: 20px;
+        font-family: 'IM Fell Great Primer', serif;
+        opacity: 0.8;
+    
+    }
+    .head1 h1{
+        width:100%;
+    }
+    
+    ul{
+        list-style-type: none;
+        overflow: hidden;
+        text-align: center;
+        margin-top:80px;
+        display: flex;
+        justify-content: center;
+    }
+    li {
+        display: inline-block;
+        vertical-align: bottom;
+      }
+      section{
+        width:480px;
+        margin: auto;
+        background-color: #fff;
+        border: #4aaaa5 1px solid;
+        top:3%;
+        overflow: hidden;
+    }
+    .id-img{
+        width: 100%;
+    }
+    .t-img{
+        position: relative;
+        height:auto;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        float: left;
+    }
+}
+@media only screen and (min-width: 641px){
+    .id-img{
+        width:150px;
+        height:160px;
+        margin:10px;
+    }
 }
